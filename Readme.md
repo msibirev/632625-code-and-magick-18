@@ -1,7 +1,7 @@
 # Учебный проект «Код и Магия» [![Build status][travis-image]][travis-url]
 
 * Студент: [Максим Афонасьев](https://up.htmlacademy.ru/javascript/18/user/632625).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Вечканов](https://up.htmlacademy.ru/javascript/18/user/902303).
 
 ---
 
