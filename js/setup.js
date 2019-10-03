@@ -118,7 +118,7 @@ wizardEyes.addEventListener('click', function () {
 });
 
 wizardFireball.addEventListener('click', function () {
-  var randomFireballColor = getRandomValueFromArray(FIREBALL_COLORS)
+  var randomFireballColor = getRandomValueFromArray(FIREBALL_COLORS);
   wizardFireball.style.backgroundColor = randomFireballColor;
   document.querySelector('[name="fireball-color"]').value = randomFireballColor;
 });
