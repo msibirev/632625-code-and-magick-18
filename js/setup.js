@@ -68,9 +68,13 @@ var setupUserName = document.querySelector('.setup-user-name');
 
 var inputFocusStatus = false;
 
-if (setupUserName.onFocus) {
+setupUserName.addEventListener('focus', function () {
   inputFocusStatus = true;
-}
+});
+
+setupUserName.addEventListener('blur', function () {
+  inputFocusStatus = false;
+});
 
 var onPopupEscPress = function (evt) {
   if (evt.keyCode === ESC_KEYCODE && inputFocusStatus === false) {
