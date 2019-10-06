@@ -64,9 +64,16 @@ userDialog.querySelector('.setup-similar').classList.remove('hidden');
 var setup = document.querySelector('.setup');
 var setupOpen = document.querySelector('.setup-open');
 var setupClose = setup.querySelector('.setup-close');
+var setupUserName = document.querySelector('.setup-user-name');
+
+var inputFocusStatus = false;
+
+if (setupUserName.onFocus) {
+  inputFocusStatus = true;
+}
 
 var onPopupEscPress = function (evt) {
-  if (evt.keyCode === ESC_KEYCODE) {
+  if (evt.keyCode === ESC_KEYCODE && inputFocusStatus === false) {
     closePopup();
   }
 };
@@ -100,6 +107,7 @@ setupClose.addEventListener('keydown', function (evt) {
     closePopup();
   }
 });
+
 
 var wizardCoat = document.querySelector('.wizard-coat');
 var wizardEyes = document.querySelector('.wizard-eyes');
